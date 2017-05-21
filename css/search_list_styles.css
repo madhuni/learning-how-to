@@ -33,15 +33,8 @@
 }
 
 .list-item:hover {
-	background: lightgrey;
+	background: #f3ecec;
+	cursor: pointer;
+	font-weight: bold;
 }
 
-.list-item a {
-	display: block;
-	color: grey;
-	text-decoration: none;
-}
-
-.list-item a:hover {
-	color:black;
-}

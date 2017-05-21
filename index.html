@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search List</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/search_list_styles.css">
+</head>
+<body>
+	<h1 class="text-center text-primary">Friends List</h1>
+	
+	<div id="input-container">
+		<i class="fa fa-search"></i>
+		<input type="text" id="my-input" placeholder="Search Friends Name">
+	</div>
+	
+
+	<ul id="friend-list" class="list-group text-center">
+		<template id="temp">
+			<li class="list-item list-group-item"><a href="#"></a></li>			
+		</template>
+	</ul>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="js/search_list.js"></script>
+</body>
+</html>

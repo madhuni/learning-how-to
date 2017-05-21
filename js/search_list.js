@@ -4,9 +4,10 @@ function searchFunction() {
 	filter = $("#my-input").val().toUpperCase();
 	ul = $("#friend-list");
 	li = ul.find("li");
+	console.log(li);
 	for (i = 0; i < li.length; i++) {
-        a = $(li[i]).find("a")[0];
-        if (a.text.toUpperCase().indexOf(filter) > -1) {
+        a = $(li[i]).text();
+        if (a.toUpperCase().indexOf(filter) > -1) {
             $(li[i]).css("display", "");
         } else {
 			$(li[i]).css("display", "none");
@@ -41,13 +42,12 @@ $(document).ready(function() {
 	    for (var i = 0; i < friends.length; i++) {
 	        var friendName = friends[i].name;
             var clone = template.content.cloneNode(true);
-            $(clone).find("a").text(friendName);
+            $(clone).find("li").text(friendName);
             template.parentElement.appendChild(clone);
 	    }
 	};
 
 	displayFriends();
-	
 	$("#my-input").on('keyup', searchFunction);
 
 });

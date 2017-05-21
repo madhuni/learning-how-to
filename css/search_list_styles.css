@@ -1,0 +1,47 @@
+#input-container {
+	padding: 10px;
+	width: 600px;
+	border: 2px solid lightgrey;
+	border-radius: 50px; 
+	margin: 10px auto;
+}
+
+#my-input {
+	display: inline-block;
+	width: 90%;
+	border: none;
+	font-size: 16px;
+}
+#my-input:focus {
+	outline: none;
+}
+
+.fa{
+	margin-right: 10px;
+	font-size: 18px;
+	color: grey;
+}
+
+#friend-list {
+	margin: 0 auto;
+	width: 600px;
+	font-size: 16px;
+	height: 300px;
+	border: 2px solid lightgrey;
+	overflow-y: scroll;
+	border-radius: 5px;
+}
+
+.list-item:hover {
+	background: lightgrey;
+}
+
+.list-item a {
+	display: block;
+	color: grey;
+	text-decoration: none;
+}
+
+.list-item a:hover {
+	color:black;
+}
